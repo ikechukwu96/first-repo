@@ -1,0 +1,317 @@
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand text-uppercase" href="#">AuroraTours</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#packages">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal Section -->
+ <div class="modal fade" tabindex="-1" id="booking-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Book a tour</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+            <div class="row">
+               <div class="col-sm-6">
+                 <div class="form-floating">
+                <input id="email1" type="email" class="form-control" placeholder="">
+                <label for="email1">Email address</label>
+            </div>
+               </div>   
+            <div class="col-sm-6">
+                <div class="form-floating">
+                <select id="select1" class="form-select">
+                    <option>USA - $899</option>
+                    <option>England, UK - $799</option>
+                    <option>Thailand - $849</option>
+                </select>
+                <label for="select1">Pick a tour</label>
+            </div>
+            </div>
+            </div>
+        </form>
+            <!-- Success message (hidden initially) -->
+        <div id="success-message" style="display:none; color:#0d6efd; font-weight:bold; text-align:center;">
+          Thanks for booking a tour and Have a Safe Trip.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel Section -->
+ <div id="herocarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>  
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="/Images/Tour 1.jpg" class="d-block w-100 c-img" alt="...">
+       <div class="carousel-caption top-0 mt-4">
+        <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
+        <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="/Images/Tour 2.jpg" class="d-block w-100 c-img" alt="...">
+       <div class="carousel-caption top-0 mt-4">
+        <p class="fs-3 mt-5 text-uppercase">The season has arrived</p>
+        <h1 class="display-1 fw-bolder text-capitalize">3 available tours</h1>
+        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="/Images/Tour 3.jpg" class="d-block w-100 c-img" alt="...">
+       <div class="carousel-caption top-0 mt-4">
+        <p class="fs-3 mt-5 text-uppercase">Destination activities</p>
+        <h1 class="display-1 fw-bolder text-capitalize">Boat Rides in Thailand</h1>
+        <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#herocarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#herocarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> 
+
+<!-- Overview Section -->
+<section class="overview">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="row w-100 text-center fs-4">
+             <div class="col-xl">
+            <i class="bi bi-airplane-fill me-2"></i>
+            3 Amazing Destinations
+        </div>
+        <div class="col-xl">
+            <i class="bi bi-wallet-fill me-2"></i>
+            Only pay 5% up front
+        </div>
+        <div class="col-xl">
+            <i class="bi bi-patch-check-fill me-2"></i>
+            1000's of customers
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packages/Cards Section -->
+ <section id="packages" class="pt-md-5">
+    <h2 class="text-center my-5">Packages</h2>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <img src="/Images/Tour 1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">USA - $899</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit, Sit, Obcanecatii.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book tour</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="col-lg">
+            <div class="card">
+                <img src="/Images/Tour 2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">England, UK - $799</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit, Sit, Obcanecatii.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book tour</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg">
+            <div class="col-lg">
+            <div class="card">
+                <img src="/Images/Tour 3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Thailand - $849</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit, Sit, Obcanecatii.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book tour</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+ </section>
+
+ <!-- Other Packages Available/ Table Section -->
+  <section id="other packages available" class="pt-md-5">
+    <h2 class="text-center my-5">Other Packages Available</h2>
+    
+    <div class="container myTable ">
+          <table class="table ">
+            <thead>
+    <tr>
+      <th scope="col">S/N</th>
+      <th scope="col">Country</th>
+      <th scope="col">Tour Price</th>
+      <!-- <th scope="col">Book Tour</th> -->
+
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+      <th scope="row">1</th>
+      <td scope="row">Hawaii</td>
+      <td scope="row">$767</td>
+      <!-- <button type="button" class="btn btn-primary">Book Tour</button> -->
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td scope="row">Paris, France</td>
+      <td scope="row">$800</td>
+      <!-- <button type="button" class="btn btn-primary">Book Tour</button> -->
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td scope="row">Canada</td>
+      <td scope="row">$780</td>
+      <!-- <button type="button" class="btn btn-primary">Book Tour</button> -->
+    </tr>
+  </tbody>
+          </table>  
+    </div>
+  </section>
+
+  <!-- Most Visted Tours/ List Section -->
+  <section id="most visted tour" class="py-md-5">
+    <h2 class="my-5 text-center">Most Booked Tours</h2>
+    <div class="container w-50 mx-auto">
+        <ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Hawaii</div>
+    </div>
+    <span class="badge text-bg-primary rounded-pill">20 Tour Bookings</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Thailand</div>
+    </div>
+    <span class="badge text-bg-primary rounded-pill">14 Tour Bookings</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Paris, France</div>
+    </div>
+    <span class="badge text-bg-primary rounded-pill">8 Tour Bookings</span>
+  </li>
+</ol>
+    </div> 
+  </section>
+
+ <!-- Accordion/FAQ Section -->
+<section id="faq" class="py-md-5">
+    <h2 class="my-5 text-center">FAQ</h2>
+    <div class="container">
+        <div class="accordion w-75 mx-auto" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        How long are the trips?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit, Sit, Obcanecatii.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Is the flight included?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit, Sit, Obcanecatii.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Can I cancel after booking?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit, Sit, Obcanecatii.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+</section>
+
+<!-- Help & Support/Off-canvas Section -->
+ <section id="help & support" class="py-md-5">
+    <h2 class="my-2 mt-5 text-center">Help & Support</h2>
+    <p class="my-4 text-center">To contact or email our help support, please click on the button below,<br> Thank you.</p>
+    <div class="container w-75 mx-auto">
+        <button class="btn btn-primary d-grid gap-2 col-6 mx-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Click here</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Help & Support Centre</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+        <i class="bi bi-envelope-at-fill"></i>
+        Email: auroratours@info.com
+    </div>
+    <div>
+        <i class="bi bi-telephone-fill"></i>
+        Telephone: 688-897-4675
+    </div>
+    
+  </div>
+</div>
+    </div>
+ </section>
+
+ <!-- Footer Section -->
+<footer class="bg-dark py-5 mt-5">
+    <div class="container text-light text-center">
+        <p class="display-5 mb-3">AuroraTours</p>
+        <small class="text-white-50">&copy; Copyright by OctaPlus</small>
+    </div>
+
+</footer>
+ 
+
